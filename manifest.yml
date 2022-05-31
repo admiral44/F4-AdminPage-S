@@ -10,7 +10,7 @@ modules:
       handler: index.handler
 resources:
   - key: main
-    path: static/hello-world/build
+    path: static/hello-world/Public
 app:
   id: ari:cloud:ecosystem::app/a97ac109-5b26-4c7b-b312-e78e11ea1f78
 permissions:
