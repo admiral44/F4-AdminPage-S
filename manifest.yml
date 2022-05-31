@@ -1,0 +1,17 @@
+modules:
+  jira:adminPage:
+    - key: f4-adminpage-s-hello-world-admin-page
+      resource: main
+      resolver:
+        function: resolver
+      title: F4-AdminPage-S
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/a97ac109-5b26-4c7b-b312-e78e11ea1f78
+permissions:
+  scopes: []
