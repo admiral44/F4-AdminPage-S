@@ -4,13 +4,25 @@ modules:
       resource: main
       resolver:
         function: resolver
-      title: F4-AdminPage-S
+      title: Admin Page   
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg   
+  jira:issuePanel:
+    - key: f4-issuePanel-s-hello-world-issue-panel
+      resource: main
+      resolver:
+        function: issuePanelresolver
+      title: Issue Panel
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
   function:
     - key: resolver
       handler: index.handler
+    - key: issuePanelresolver
+      handler: index.handler
+
 resources:
   - key: main
-    path: static/hello-world/build
+    path: static/hello-world/Public
+
 app:
   id: ari:cloud:ecosystem::app/a97ac109-5b26-4c7b-b312-e78e11ea1f78
 permissions:
